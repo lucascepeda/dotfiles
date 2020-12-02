@@ -21,9 +21,9 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash.
-brew install bash
+brew install bash 
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
@@ -33,17 +33,17 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget 
 
 # Install GnuPG to enable PGP-signing commits.
-brew install gnupg
+# brew install gnupg
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install php
+# brew install php
 brew install gmp
 
 # Install font tools.
@@ -54,29 +54,29 @@ brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
+# brew install bfg
+# brew install binutils
+# brew install binwalk
+# brew install cifer
+# brew install dex2jar
+# brew install dns2tcp
+# brew install fcrackzip
+# brew install foremost
+# brew install hashpump
+# brew install hydra
+# brew install john
+# brew install knock
+# brew install netpbm
+# brew install nmap
+# brew install pngcheck
+# brew install socat
+# brew install sqlmap
+# brew install tcpflow
+# brew install tcpreplay
+# brew install tcptrace
+# brew install ucspi-tcp # `tcpserver` etc.
+# brew install xpdf
+# brew install xz
 
 # Install other useful binaries.
 brew install ack
@@ -96,6 +96,45 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+
+# Lucas things
+# Improved and better looking `git diff`
+brew install diff-so-fancy
+# Improved and better looking `cat`
+brew install bat
+# Improved `ls`
+brew install exa
+# Improved `top`
+brew install htop
+# Better CLI json handling
+brew install jq
+# Speedtest CLI
+brew install speedtest-cli 
+# Get the WiFi pass of the network you are connected to
+brew install wifi-password
+# Bat: better cat https://github.com/sharkdp/bat
+brew install 
+# The Fuck https://github.com/nvbn/thefuck
+brew install thefuck
+
+brew install nvm
+brew install gh 
+brew install youtube-dl
+brew install ffmpeg
+brew install speedtest-cli
+
+# Casks
+
+brew install alfred
+brew install dash
+brew install iterm2
+brew install telegram 
+brew install whatsapp
+brew install spotify
+#brew install bartender
+#brew install moom
+brew install popcorn-time
 
 # Remove outdated versions from the cellar.
 brew cleanup
